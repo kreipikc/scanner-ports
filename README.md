@@ -13,12 +13,12 @@ I created this project to study the basic work with the net and the _net_ librar
 To run the program, just write run the `main.go` file - `go run main.go`
 
 You can also configure settings such as:
-- `address` - specify the address you need, _default: **scanme.nmap.org**_ (accepts **string**),
+- `address` - specify the address you need, _<u>required field</u> **or** specify a document_ (accepts **string**),
 - `first_port` - specify which port the scan will start from, _default: **1**_ (accepts **int**),
 - `last_port` - specify the port to which the scan will take place, _default: **1024**_ (accpet **int**),
 - `max_buffer` - here, specify the number for the goroutine buffer, <u>change it if you understand why</u>, _default: **100**_ (accept **int**).
-- `save_format` - if you want to save the result, then add it in what format, _default: **none**_ (accepts **json**, **txt**)
-- `document` - if you need to scan several addresses from a txt file (addresses should be in the column line by line), then specify the path to it
+- `save_format` - if you want to save the result, then add it in what format, _default: **none**_ (accepts **json**, **txt**),
+- `document` - if you need to scan several addresses from a txt file (addresses should be in the column line by line), then specify the path to it, _<u>required field</u> **or** specify a address_ (accept **string**).
 
 ### **!!!Use only address or only document!!!**
 

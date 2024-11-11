@@ -213,8 +213,11 @@ func main() {
 				fmt.Println("File empty")
 				os.Exit(1)
 			}
-		} else {
-			fmt.Println("Use only address or document")
+		} else if address != "" && document != "" {
+			fmt.Println("Use ONLY address or ONLY document")
+			os.Exit(1)
+		} else if address == "" && document == "" {
+			fmt.Println("Use address or document")
 			os.Exit(1)
 		}
 	}
