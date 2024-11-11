@@ -196,12 +196,12 @@ func main() {
 	} else {
 		if address != "" && document == "" {
 			fmt.Println("Press 'Enter' to start scan...")
-			fmt.Scan(" ")
+			fmt.Scanf(" ")
 
 			starter(address, firstPort, lastPort, bufferChan, saveFormat)
 		} else if address == "" && document != "" {
 			fmt.Println("Press 'Enter' to start scan...")
-			fmt.Scan(" ")
+			fmt.Scanf(" ")
 
 			addressList := ReadAddressDocument(document)
 
